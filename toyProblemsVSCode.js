@@ -104,3 +104,27 @@ function solve(key){
   
   
   
+
+  function solve(s){
+    var notAVowel = 0;
+    var alpha = 'abcdefg'
+    var subString = s.toString();
+  
+  
+        for(var i = 0; i <= subString.length -1; i++){
+          if(subString.charAt(i) == 'b'|| subString.charAt(i) == 'c' || subString.charAt(i) == 'd'|| subString.charAt(i) == 'f'|| subString.charAt(i) == 'g'|| subString.charAt(i) == 'h' || subString.charAt(i) == 'j' || subString.charAt(i) == 'k' || subString.charAt(i) == 'l' || subString.charAt(i) == 'm' || subString.charAt(i) == 'n' || 'p' || subString.charAt(i) == 'q' || subString.charAt(i) == 'r' || subString.charAt(i) == 's' || subString.charAt(i) == 't' || subString.charAt(i) == 'v' || subString.charAt(i) == 'w' || subString.charAt(i) == 'x' || subString.charAt(i) == 'y'|| subString.charAt(i) == 'z'){
+            notAVowel = notAVowel + 1;
+  
+        }
+        
+        // notAVowel = notAVowel + 0;
+      }
+    return notAVowel;
+    
+  }
+  
+  console.log(solve('zodiac'))//=>26
+  console.log(solve('strength'))//=>57
+  console.log(solve('abcde'))//=>9
+  
+  

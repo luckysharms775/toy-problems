@@ -39,6 +39,7 @@
 // part I
 var bind = function(func, context){
     // your code here!
+    
 
     return () => func.call(context);
 
